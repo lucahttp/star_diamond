@@ -54,21 +54,22 @@ def get_matrix():
                     m = m -1
             return str(matrix)
 
+        try:
+            if (int(num) % 2) == 0:
+                return ("Please select an Odd Number")
 
-        if (int(num) % 2) == 0:
-            return ("Please select an Odd Number")
+            elif (int(num) % 2) == 1:
 
-        elif (int(num) % 2) == 1:
+                if (int(type)==1):
+                    return (star(int(num)))
 
-            if (int(type)==1):
-                return (star(int(num)))
+                elif (int(type)==2):
+                    return (diamond(int(num)))
 
-            elif (int(type)==2):
-                return (diamond(int(num)))
-
-            else:
-                return ("Wrong Type")
-
+                else:
+                    return ("Wrong Type")
+        except:
+            return ("Something is Wrong with you Input! Please provide an Odd Integer Number")
 
 
     return "Empty"
