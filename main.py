@@ -29,7 +29,7 @@ def get_matrix():
                 n +=1
                 m = m-1
 
-            return str(matrix)
+            return (str(matrix).replace("\n","<br>"))
 
 
 
@@ -52,7 +52,7 @@ def get_matrix():
 
                     n +=1
                     m = m -1
-            return str(matrix)
+            return (str(matrix).replace("\n","<br>"))
 
         try:
             if (int(num) % 2) == 0:
