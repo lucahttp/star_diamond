@@ -10,8 +10,6 @@ def get_home():
     return render_template('home.html')
 
 
-
-
 @app.route('/matrix/', methods=['POST'])
 def get_matrix():
     if request.method == 'POST':
